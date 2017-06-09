@@ -1,5 +1,6 @@
 package com.ravitej.actionbarwithactionview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("My Activity");
     }
 
     @Override
@@ -52,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_settings:
                 // User chose the "Settings" item, show the app settings UI...
+                 /*Display the fragment as the main content*/
+                Intent intent = new Intent(this, SettingActivity.class);
+                startActivity(intent);
                 return true;
 
             case R.id.action_favorite:
