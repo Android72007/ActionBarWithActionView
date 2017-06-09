@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">New Activity</string>
+    <string name="favourite">Favourite</string>
+    <string name="settings">Settings</string>
+</resources>
