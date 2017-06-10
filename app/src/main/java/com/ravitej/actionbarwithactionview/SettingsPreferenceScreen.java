@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
 import android.support.v7.preference.CheckBoxPreference;
+import android.support.v7.preference.EditTextPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
@@ -40,6 +41,8 @@ public class SettingsPreferenceScreen extends PreferenceFragmentCompat implement
             if(valueIndex >= 0){
                 list.setSummary(list.getEntries()[valueIndex]);
             }
+        }else if(p instanceof EditTextPreference){
+            p.setSummary(value);
         }
     }
 
