@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ravitej.actionbarwithactionview.MainActivity">
+    tools:context="com.ravitej.actionbarwithactionview.SettingActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/colorPrimary" />
-    <TextView
-        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:id="@+id/my_toolbar"
+        android:theme="@style/AppTheme"
+        android:background="@color/colorPrimary"/>
+    <fragment
+        android:id="@+id/settings_fragment"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:id="@+id/tv_maintext"
-        android:text="Hello User!!"/>
+        android:layout_width="match_parent"
+        android:name="com.ravitej.actionbarwithactionview.SettingsPreferenceScreen" />
 
 </LinearLayout>

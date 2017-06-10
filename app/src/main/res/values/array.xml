@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="conn_type">
+        <item>WIFI</item>
+        <item>Network</item>
+    </array>
+    <array name="conn_values">
+        <item>wifi</item>
+        <item>network</item>
+    </array>
+</resources>

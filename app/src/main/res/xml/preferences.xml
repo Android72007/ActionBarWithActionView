@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        android:key="pref_sync"
+        android:title="Sync"
+        android:defaultValue="true"
+        android:summaryOn="Sync On"
+        android:summaryOff="Sync Off"/>
 
+    <ListPreference
+        android:title="Pref Sync ConnectionType"
+        android:key="Sync_ConnType"
+        android:dialogTitle="Sync ConnectionType"
+        android:entries="@array/conn_type"
+        android:summary=""
+        android:entryValues="@array/conn_values"
+        android:defaultValue="@string/default_sync" />
+
+    <EditTextPreference
+        android:key="user_name"
+        android:title="User Name"/>
 </PreferenceScreen>
