@@ -13,7 +13,7 @@
         android:key="Sync_ConnType"
         android:dialogTitle="Sync ConnectionType"
         android:entries="@array/conn_type"
-        android:summary="WiFi"
+        android:summary=""
         android:entryValues="@array/conn_values"
-        android:defaultValue="@string/default_sync"/>
+        android:defaultValue="@string/default_sync" />
 </PreferenceScreen>
